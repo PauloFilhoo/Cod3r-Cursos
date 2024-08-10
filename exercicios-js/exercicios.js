@@ -10,10 +10,34 @@
 
 // Escreva uma função que receba a idade de uma pessoa em anos e retorne em dias
 
-function ConveterIdade(idade)
+// function ConveterIdade(idade)
+// {
+//     console.log(idade * 365)
+// }
+
+// ConveterIdade(25)
+// ConveterIdade(16)
+
+// Calcular o salário de um funcionário no mês com horas e quanto ele ganha por hora
+
+// function CalcularSalario(horas, ganhoHora)
+// {
+//     console.log(`Salário igual a R$:`, horas * ganhoHora)
+// }
+
+// CalcularSalario(20, 40.5)
+
+const meses = ['janeiro', 'fervereiro', 'março', 'abril', 'junho',
+     'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
+
+function PegarData(numero)
 {
-    console.log(idade * 365)
+    if (numero < 1)
+    {
+        console.log('Digite um valor válido')
+    } else {
+        console.log(meses[numero - 1])
+    }
 }
 
-ConveterIdade(25)
-ConveterIdade(16)
+PegarData()
