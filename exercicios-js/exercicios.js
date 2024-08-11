@@ -27,17 +27,49 @@
 
 // CalcularSalario(20, 40.5)
 
-const meses = ['janeiro', 'fervereiro', 'março', 'abril', 'junho',
-     'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
+const meses = ['janeiro', '', '', '', '',
+    '', '', '', '', '', '']
 
-function PegarData(numero)
-{
-    if (numero < 1)
-    {
-        console.log('Digite um valor válido')
-    } else {
-        console.log(meses[numero - 1])
+function PegarData(numero) {
+    switch (numero) {
+        case 1:
+            return console.log('janeiro')
+        case 2:
+            return console.log('fervereiro')
+        case 3:
+            return console.log('março')
+            break
+        case 4:
+            return console.log('abril')
+            break
+        case 5:
+            return console.log('maio')
+            break
+        case 6:
+            return console.log('junho')
+            break
+        case 7:
+            return console.log('julho')
+            break
+        case 8:
+            return console.log('agosto')
+            break
+        case 9:
+            return console.log('setembro')
+            break
+        case 10:
+            return console.log('outubro')
+            break
+        case 11:
+            return console.log('novembro')
+            break
+        case 12:
+            return console.log('dezembro')
+            break
+        default:
+            return console.log('Não válido')
+
     }
 }
 
-PegarData()
+PegarData(8)
