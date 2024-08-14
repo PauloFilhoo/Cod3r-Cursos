@@ -27,49 +27,82 @@
 
 // CalcularSalario(20, 40.5)
 
-const meses = ['janeiro', '', '', '', '',
-    '', '', '', '', '', '']
+// const meses = ['janeiro', '', '', '', '',
+//     '', '', '', '', '', '']
 
-function PegarData(numero) {
-    switch (numero) {
-        case 1:
-            return console.log('janeiro')
-        case 2:
-            return console.log('fervereiro')
-        case 3:
-            return console.log('março')
-            break
-        case 4:
-            return console.log('abril')
-            break
-        case 5:
-            return console.log('maio')
-            break
-        case 6:
-            return console.log('junho')
-            break
-        case 7:
-            return console.log('julho')
-            break
-        case 8:
-            return console.log('agosto')
-            break
-        case 9:
-            return console.log('setembro')
-            break
-        case 10:
-            return console.log('outubro')
-            break
-        case 11:
-            return console.log('novembro')
-            break
-        case 12:
-            return console.log('dezembro')
-            break
-        default:
-            return console.log('Não válido')
+// function PegarData(numero) {
+//     switch (numero) {
+//         case 1:
+//             return console.log('janeiro')
+//         case 2:
+//             return console.log('fervereiro')
+//         case 3:
+//             return console.log('março')
+//             break
+//         case 4:
+//             return console.log('abril')
+//             break
+//         case 5:
+//             return console.log('maio')
+//             break
+//         case 6:
+//             return console.log('junho')
+//             break
+//         case 7:
+//             return console.log('julho')
+//             break
+//         case 8:
+//             return console.log('agosto')
+//             break
+//         case 9:
+//             return console.log('setembro')
+//             break
+//         case 10:
+//             return console.log('outubro')
+//             break
+//         case 11:
+//             return console.log('novembro')
+//             break
+//         case 12:
+//             return console.log('dezembro')
+//             break
+//         default:
+//             return console.log('Não válido')
 
+//     }
+// }
+
+// PegarData(8)
+
+// Crie uma função que receba dois numeros e retorne se o primeiro é maior que o segundo
+
+// function MaiorOuIgual(num1, num2)
+// {
+//     if (typeof(num1) != typeof(num2))
+//         return console.log('false')
+//     console.log(num1 >= num2)
+// }
+
+// MaiorOuIgual(0, 0)
+// MaiorOuIgual(0, "0")
+// MaiorOuIgual(5, 1)
+
+// Crie uma função que retorne o inverso
+
+function Inverter(parametro)
+{
+    if (typeof parametro == 'string')
+    {
+        console.log("booleano ou números esperados, mas o parâmetro é do tipo", typeof(parametro))
+    } else if (typeof parametro == 'number')
+    {
+        console.log(parametro * -1)
+    } else {
+        console.log(!parametro)
     }
 }
 
-PegarData(8)
+Inverter(true)
+Inverter("6")
+Inverter(2000)
+Inverter("programação")
