@@ -89,20 +89,59 @@
 
 // Crie uma função que retorne o inverso
 
-function Inverter(parametro)
-{
-    if (typeof parametro == 'string')
-    {
-        console.log("booleano ou números esperados, mas o parâmetro é do tipo", typeof(parametro))
-    } else if (typeof parametro == 'number')
-    {
-        console.log(parametro * -1)
-    } else {
-        console.log(!parametro)
-    }
-}
+// function Inverter(parametro)
+// {
+//     if (typeof parametro == 'string')
+//     {
+//         console.log("booleano ou números esperados, mas o parâmetro é do tipo", typeof(parametro))
+//     } else if (typeof parametro == 'number')
+//     {
+//         console.log(parametro * -1)
+//     } else {
+//         console.log(!parametro)
+//     }
+// }
 
-Inverter(true)
-Inverter("6")
-Inverter(2000)
-Inverter("programação")
+// Inverter(true)
+// Inverter("6")
+// Inverter(2000)
+// Inverter("programação")
+
+// Está entre
+
+// function EstaEntre(num, min, max, inclusivo)
+// {
+//     if (!inclusivo)
+//     {
+//         num < max && num > min ? console.log('true') : console.log('false')
+//     } else {
+//         num <= max && num >= min ? console.log('true') : console.log('false')
+//     }
+// }
+
+// EstaEntre(10, 50, 100)
+// EstaEntre(16, 100, 160)
+// EstaEntre(51, 50, 100)
+// EstaEntre(50, 50, 100, true)
+
+// Não negativos e maiores ou iguais a 0 e realizar multiplcação
+
+// function Multiplicar(num1, num2)
+// {
+//     let resultado = 0
+
+//     for (let i = 0; i < Math.abs(num2); i++)
+//     {
+//         resultado += num1
+//     }
+
+//     if (num2 < 0)
+//         resultado = -resultado
+
+//     console.log(resultado)
+// }
+
+// Multiplicar(2, 2)
+// Multiplicar(5, 5)
+// Multiplicar(0, 0)
+// Multiplicar(5, -4)
